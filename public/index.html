@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1 id="Personaltitle">Test</h1>
+    <button id="personalCodeBtn">
+        click
+    </button>
+    <br>
+    <hr>
+    <input type="text" id="personal_code_chat_Input">
+    <button id="personal_code_chat">
+        chat
+    </button>
+    <button id="personal_code_video">
+        video
+    </button>
+    <div class="main_container">
+        <div id="dialog"></div>
+    </div>
+    <div style="display: flex;">
+        <div id="mic-button"> <img id="mic_button_image" src="./utils/images/mic.png" alt=""></div>
+        <div id="camera-button"> <img id="camera_button_image" src="./utils/images/camera.png" alt=""></div>
+    </div>
+    <div style="    width: 473px;
+    height: 412px;
+    margin: auto;
+    border: 1px solid black;">
+        <video src="" id="local_video" autoplay></video>
+    </div>
+    <hr>
+    <br>
+    <div style="    width: 473px;
+    height: 412px;
+    margin: auto;
+    border: 1px solid black;">
+        <video src="" id="remote_video" autoplay></video>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/element.js" type="module"></script>
+<script src="./js/main.js" type="module"></script>
+<script src="./js/wss.js" type="module"></script>
+<script src="./js/constans.js" type="module"></script>
+<script src="./js/webRTCHandler.js" type="module"></script>
+<script src="./js/ui.js" type="module"></script>
+<script src="./js/store.js" type="module"></script>
+
+</html>
